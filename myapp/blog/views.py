@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello World, You are at the blog index.")
+
+def detail(request):
+    return HttpResponse("You are viewing the blog detail.")
