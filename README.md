@@ -6,6 +6,7 @@ A simple blog application built with Django that allows users to view blog posts
 
 - Blog post listing page
 - Individual blog post detail pages
+- URL redirection system
 - Basic routing system
 - Admin interface for content management
 
@@ -23,6 +24,13 @@ django-blog/
 │   └── manage.py         # Django management script
 └── requirements.txt      # Project dependencies
 ```
+
+## Available URLs
+
+- `/` - Home page (blog index)
+- `/post/<int:post_id>` - Individual blog post detail page
+- `/new-url` - New URL endpoint
+- `/old-url` - Redirects to the new URL endpoint
 
 ## Setup
 
@@ -60,6 +68,7 @@ django-blog/
 The project is currently in development with the following features implemented:
 - Basic URL routing for blog posts
 - View functions for listing and detail pages
+- URL redirection system
 - Project structure set up for future feature additions
 
 ## Contributing
