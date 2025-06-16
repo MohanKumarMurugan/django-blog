@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.urls import reverse
 
 # Create your views here.
-
 def index(request):
     return HttpResponse("Hello World, You are at the blog index.")
 
@@ -10,7 +10,7 @@ def detail(request, post_id):
     return HttpResponse(f"You are viewing the post detail page. And ID is {post_id}")
 
 def old_url_redirect(request):
-    return redirect("new_url")
+    return redirect(reverse('blog:new_page_url'))
 
 def new_url_view(request):
     return HttpResponse("This is the new URL")
